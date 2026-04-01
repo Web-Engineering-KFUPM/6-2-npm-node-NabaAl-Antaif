@@ -3,7 +3,7 @@ export function add(numbers) {
 }
 
 export function subtract(numbers) {
-    return numbers.reduce((result, num) => result - num, 0)
+    return numbers.reduce((result, num) => result - num, numbers[0])
 }
 
 export function multiply(numbers) {
@@ -11,5 +11,5 @@ export function multiply(numbers) {
 }
 
 export function divide(numbers) {
-    return numbers.reduce((result, num) => result / num, 1)
+    return numbers.reduce((result, num) => result / num)
 }
